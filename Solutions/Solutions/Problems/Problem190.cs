@@ -17,7 +17,7 @@ namespace Solutions.Problems
             var count = 0;
             while (n > 0)
             {
-                result = result * 2 + n % 2;
+                result = result * 2 + (n & 1);
                 n = n >> 1;
                 count++;
             }
