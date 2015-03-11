@@ -24,7 +24,7 @@ namespace Solutions.Tests.Problems.Tests
                 var input = pair.Key;
                 var expected = data[input];
                 var actual = Problem191.HammingWeight(input);
-                Assert.AreEqual(actual, expected);
+                Assert.AreEqual(expected, actual);
             }
         }
     }
