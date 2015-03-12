@@ -22,7 +22,7 @@ namespace Solutions.Problems
                 return;
 
 
-            
+
             var result = new int[length];
             var shift = length - k;
 
@@ -35,6 +35,34 @@ namespace Solutions.Problems
             {
                 nums[i] = result[i];
             }
+        }
+
+        public static void Reverse(int[] nums, int start, int end)
+        {
+            while (start < end)
+            {
+                var temp = nums[start];
+                nums[start] = nums[end];
+                nums[end] = temp;
+
+                ++start;
+                --end;
+            }
+        }
+
+        public static void RotateInplace(int[] nums, int k)
+        {
+            var length = nums.Length;
+
+            k = k % length;
+            if (k < 0) k += length;
+
+            if (k == 0)
+                return;
+
+            Reverse(nums, length - k, length - 1);
+            Reverse(nums, 0, length - k - 1);
+            Reverse(nums, 0, length - 1);
         }
     }
 }
