@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Solutions.Problems
 {
@@ -15,18 +16,20 @@ namespace Solutions.Problems
     {
         public static Tuple<int, int> TwoSum(int[] numbers, int target)
         {
-            var length = numbers.Length;
-            var left = 0;
-            while (left < length - 1)
+            var dict = new HashSet<int>();
+            var right = 0;
+            while (right < numbers.Length)
             {
-                var right = length - 1;
-                while (right > left)
+                var remain = target - numbers[right];
+                if (dict.Contains(remain))
                 {
-                    if (numbers[left] + numbers[right] == target)
-                        return new Tuple<int, int>(left + 1, right + 1);
-                    right--;
+                    var left = 0;
+                    while (numbers[left++] != remain) { }
+                    return new Tuple<int, int>(left, right + 1);
                 }
-                left++;
+
+                dict.Add(numbers[right]);
+                right++;
             }
 
             return null;
