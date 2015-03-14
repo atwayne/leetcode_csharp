@@ -3,10 +3,10 @@ using NUnit.Framework;
 
 namespace Solutions.NUnitTests.Tests
 {
-	[TestFixture ()]
+	[TestFixture]
     public class Problem001Test
     {
-		[Test()]
+		[Test]
         public void TwoSumTest()
         {
             var numbers = new [] { 2, 7, 11, 15 };

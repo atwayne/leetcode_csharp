@@ -5,10 +5,10 @@ using NUnit.Framework;
 
 namespace Solutions.NUnitTests.Tests
 {
-	[TestFixture ()]
+	[TestFixture]
     public class Problem046Test
     {
-		[Test()]
+		[Test]
         public void PermuteTest()
         {
             var input = new[] { 1, 2, 3 };
@@ -27,7 +27,7 @@ namespace Solutions.NUnitTests.Tests
             Assert.AreEqual(expected.Count, actual.Count);
         }
 
-		[Test()]
+		[Test]
         public void NextNumberTest()
         {
             var input = new[] { 1, 2, 5, 3 };
@@ -36,15 +36,15 @@ namespace Solutions.NUnitTests.Tests
             CollectionAssert.AreEqual(expected, actual);
         }
 
-		[Test()]
-        public void NextNumberTest_MaxNumberShouldReturnNull()
+		[Test]
+        public void NextNumberTestMaxNumberShouldReturnNull()
         {
             var input = new[] { 5, 3, 2, 1 };
             var actual = Problem046.NextNumber(input);
             Assert.IsNull(actual);
         }
 
-		[Test()]
+		[Test]
         public void PreviousNumberTest()
         {
             var input = new[] { 1, 3, 2, 5 };
@@ -53,8 +53,8 @@ namespace Solutions.NUnitTests.Tests
             CollectionAssert.AreEqual(expected, actual);
         }
 
-		[Test()]
-        public void PreviousNumberTest_SmallestNumberShouldReturnNull()
+		[Test]
+        public void PreviousNumberTestSmallestNumberShouldReturnNull()
         {
             var input = new[] { 1, 2, 3 };
             var actual = Problem046.PreviousNumber(input);
