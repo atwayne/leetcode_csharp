@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Solutions.Problems;
+using NUnit.Framework;
 
-namespace Solutions.Tests.Problems.Tests
+
+namespace Solutions.NUnitTests.Tests
 {
-    [TestClass]
+	[TestFixture ()]
     public class Problem189Test
     {
-        [TestMethod]
+		[Test()]
         public void RotateTest()
         {
             var testcases = new List<TestCase>
@@ -28,7 +29,7 @@ namespace Solutions.Tests.Problems.Tests
             }
         }
 
-        [TestMethod]
+		[Test()]
         public void ReverseTest()
         {
             var input = new int[] { 1, 2, 3, 4, 5, 6, 7 };
@@ -43,7 +44,7 @@ namespace Solutions.Tests.Problems.Tests
         }
 
 
-        [TestMethod]
+		[Test()]
         public void RotateInPlaceTest()
         {
             var testcases = new List<TestCase>

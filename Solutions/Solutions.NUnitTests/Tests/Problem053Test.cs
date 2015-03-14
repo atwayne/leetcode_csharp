@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Solutions.Problems;
+﻿using Solutions.Problems;
+using NUnit.Framework;
 
-namespace Solutions.Tests.Problems.Tests
+namespace Solutions.NUnitTests.Tests
 {
-    [TestClass]
+	[TestFixture ()]
     public class Problem053Test
     {
-        [TestMethod]
+		[Test()]
         public void MaxSubArrayTest()
         {
             var input = new int[] { -2, 1, -3, 4, -1, 2, 1, -5, 4 };

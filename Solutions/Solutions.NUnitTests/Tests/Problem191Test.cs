@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Solutions.Problems;
+using NUnit.Framework;
 
-namespace Solutions.Tests.Problems.Tests
+namespace Solutions.NUnitTests.Tests
 {
-    [TestClass]
+	[TestFixture ()]
     public class Problem191Test
     {
-        [TestMethod]
+		[Test()]
         public void HammingWeightTests()
         {
             var data = new Dictionary<uint, int>

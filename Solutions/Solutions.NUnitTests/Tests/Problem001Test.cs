@@ -1,12 +1,12 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Solutions.Problems;
+﻿using Solutions.Problems;
+using NUnit.Framework;
 
-namespace Solutions.Tests.Problems.Tests
+namespace Solutions.NUnitTests.Tests
 {
-    [TestClass]
+	[TestFixture ()]
     public class Problem001Test
     {
-        [TestMethod]
+		[Test()]
         public void TwoSumTest()
         {
             var numbers = new [] { 2, 7, 11, 15 };

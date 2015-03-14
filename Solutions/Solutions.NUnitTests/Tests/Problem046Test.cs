@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Solutions.Problems;
+using NUnit.Framework;
 
-namespace Solutions.Tests.Problems.Tests
+
+namespace Solutions.NUnitTests.Tests
 {
-    [TestClass]
+	[TestFixture ()]
     public class Problem046Test
     {
-        [TestMethod]
+		[Test()]
         public void PermuteTest()
         {
             var input = new[] { 1, 2, 3 };
@@ -26,7 +27,7 @@ namespace Solutions.Tests.Problems.Tests
             Assert.AreEqual(expected.Count, actual.Count);
         }
 
-        [TestMethod]
+		[Test()]
         public void NextNumberTest()
         {
             var input = new[] { 1, 2, 5, 3 };
@@ -35,7 +36,7 @@ namespace Solutions.Tests.Problems.Tests
             CollectionAssert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+		[Test()]
         public void NextNumberTest_MaxNumberShouldReturnNull()
         {
             var input = new[] { 5, 3, 2, 1 };
@@ -43,7 +44,7 @@ namespace Solutions.Tests.Problems.Tests
             Assert.IsNull(actual);
         }
 
-        [TestMethod]
+		[Test()]
         public void PreviousNumberTest()
         {
             var input = new[] { 1, 3, 2, 5 };
@@ -52,7 +53,7 @@ namespace Solutions.Tests.Problems.Tests
             CollectionAssert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
+		[Test()]
         public void PreviousNumberTest_SmallestNumberShouldReturnNull()
         {
             var input = new[] { 1, 2, 3 };
