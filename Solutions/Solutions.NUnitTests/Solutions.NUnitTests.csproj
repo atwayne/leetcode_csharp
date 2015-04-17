@@ -39,6 +39,7 @@
     <Compile Include="Tests\Problem003Tests.cs" />
     <Compile Include="Tests\Problem008Tests.cs" />
     <Compile Include="Tests\Problem001Test.cs" />
+    <Compile Include="Tests\Problem042Tests.cs" />
     <Compile Include="Tests\Problem046Test.cs" />
     <Compile Include="Tests\Problem053Test.cs" />
     <Compile Include="Tests\Problem189Test.cs" />
@@ -54,6 +55,9 @@
       <Project>{F71685B7-CB87-4BE2-8BE7-9642F4A932FD}</Project>
       <Name>Solutions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
