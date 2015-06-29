@@ -24,6 +24,8 @@ namespace Solutions.Problems
             //var left = 0;
             //var next = left;
             //while(height[next])
+
+            throw new NotImplementedException();
         }
     }
 }
