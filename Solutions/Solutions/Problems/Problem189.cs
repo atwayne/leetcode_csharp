@@ -1,6 +1,4 @@
-﻿
-using System;
-namespace Solutions.Problems
+﻿namespace Solutions.Problems
 {
     /// <summary>
     /// https://leetcode.com/problems/rotate-array/

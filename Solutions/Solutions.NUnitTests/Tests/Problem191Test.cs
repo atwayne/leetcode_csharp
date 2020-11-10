@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using Solutions.Problems;
 using NUnit.Framework;
+using Solutions.Problems;
 
 namespace Solutions.NUnitTests.Tests
 {
-	[TestFixture ()]
+    [TestFixture()]
     public class Problem191Test
     {
-		[Test()]
+        [Test()]
         public void HammingWeightTests()
         {
             var data = new Dictionary<uint, int>
