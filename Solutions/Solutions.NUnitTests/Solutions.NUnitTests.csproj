@@ -46,6 +46,7 @@
     <Compile Include="Tests\Problem046Test.cs" />
     <Compile Include="Tests\Problem053Test.cs" />
     <Compile Include="Tests\Problem122Test.cs" />
+    <Compile Include="Tests\Problem188Test.cs" />
     <Compile Include="Tests\Problem229Test.cs" />
     <Compile Include="Tests\Problem169Test.cs" />
     <Compile Include="Tests\Problem189Test.cs" />
