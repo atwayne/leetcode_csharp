@@ -15,17 +15,42 @@ namespace Solutions.Problems
         public static int Trap(IList<int> height)
         {
             // we need at least three elements
-            //if (height.Count < 3)
-            //    return 0;
+            if (height.Count < 3)
+                return 0;
 
-            //var max = height.Count;
-
-            //var peaks = new List<int>();
-            //var left = 0;
-            //var next = left;
-            //while(height[next])
-
-            throw new NotImplementedException();
+            var left = 0;
+            var right = height.Count - 1;
+            var maxLeft = 0;
+            var maxRight = 0;
+            var result = 0;
+            while (left <= right)
+            {
+                if (height[left] < height[right])
+                {
+                    if (height[left] > maxLeft)
+                    {
+                        maxLeft = height[left];
+                    }
+                    else
+                    {
+                        result += maxLeft - height[left];
+                    }
+                    left++;
+                }
+                else
+                {
+                    if (height[right] > maxRight)
+                    {
+                        maxRight = height[right];
+                    }
+                    else
+                    {
+                        result += maxRight - height[right];
+                    }
+                    right--;
+                }
+            }
+            return result;
         }
     }
 }
